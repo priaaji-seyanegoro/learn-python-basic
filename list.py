@@ -1,6 +1,14 @@
 # Array 
 users = ["AJI","REZA","AJAT","IMAM","MAYA"]
-print(users[0])
+# add users items
+
+# users.append("New Users")
+users.insert(0,"first user")
+
+# remove array 
+users.pop()
+print(users)
+
 
 # otomatic generate array
 alot_zero = [0] * 20
@@ -11,6 +19,7 @@ items = ['laptops' , 'phone' , 'joystick']
 laptop = items[0]
 print(laptop)
 
-# distratring array 
-laptop,phone,joystick = items
-print(joystick)
+# distratring variabel array 
+laptops , *other = items
+print(laptops)
+print(other)
